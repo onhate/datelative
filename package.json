@@ -1,17 +1,26 @@
 {
   "name": "datelative",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A library that converts relative string text to JavaScript dates",
   "main": "index.js",
+  "types": "index.d.ts",
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "test:watch": "node --test --watch"
+    "test:watch": "node --test --watch",
+    "prepublishOnly": "npx tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/onhate/datelative.git"
   },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "index.d.ts.map",
+    "README.md",
+    "package.json"
+  ],
   "keywords": [
     "date",
     "relative",
@@ -23,5 +32,7 @@
     "url": "https://github.com/onhate/datelative/issues"
   },
   "homepage": "https://github.com/onhate/datelative#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
