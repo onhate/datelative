@@ -2,7 +2,7 @@
 
 I wrote it '-5m' ago.
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/onhate/datelative/CI)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/onhate/datelative/ci.yaml?branch=main)
 ![npm](https://img.shields.io/npm/v/datelative)
 ![GitHub](https://img.shields.io/github/license/onhate/datelative)
 
