@@ -2,6 +2,8 @@
   "name": "datelative",
   "version": "0.0.5",
   "description": "A library that converts relative string text to JavaScript dates",
+  "type": "module",
+
   "exports": {
     ".": {
       "types": "./dist/dts/index.d.ts",

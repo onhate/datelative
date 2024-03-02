@@ -36,6 +36,7 @@ const units = {
   'Week': 'weeks',
   'Weeks': 'weeks',
   'M': 'months',
+  'mo': 'months',
   'mon': 'months',
   'month': 'months',
   'months': 'months',
