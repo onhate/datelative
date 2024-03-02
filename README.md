@@ -50,8 +50,6 @@ const date4 = relativeToDate('-2 weeks', reference);
 // ... and so on for months, years, quarters, milliseconds, seconds, minutes, and hours
 ```
 
-Sure, here's the content for the README file with "+2" in front of each unit:
-
 # Available Units
 
 The + sign is optional and can be omitted.
