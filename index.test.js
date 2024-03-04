@@ -1,6 +1,6 @@
 import assert from 'node:assert';
 import { describe, it } from 'node:test';
-import { relativeToDate } from './index.js';
+import { isValid, relativeToDate } from './index.js';
 
 describe('datelative', () => {
   describe('Invalid expressions', () => {
@@ -111,6 +111,8 @@ describe('datelative', () => {
       it(expression, () => {
         const reference = new Date();
         const expected = new Date(reference.getTime() + millis);
+
+        assert.deepEqual(isValid(expression), true);
         assert.deepEqual(relativeToDate(expression, reference), expected);
       });
     });

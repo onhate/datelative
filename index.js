@@ -96,11 +96,11 @@ export function relativeToDate(expression, currentDate = new Date()) {
     throw new TypeError('The expression should be a string');
   }
 
-  if (!isValid(expression)) {
+  const match = expression.match(regExp);
+  if (!match) {
     throw new Error('The expression is not a valid expression');
   }
 
-  const match = expression.match(regExp);
   const operator = match[1] === '-' ? -1 : 1;
   const amount = parseInt(match[2]);
   const unit = units[match[3]];
